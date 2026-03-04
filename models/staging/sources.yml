@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DB_KITAKI
+    schema: RAW
+    tables:
+      - name: USERS
+      - name: ORDERS
