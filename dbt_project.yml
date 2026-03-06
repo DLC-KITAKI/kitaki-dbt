@@ -35,8 +35,13 @@ models:
     staging:
       +schema: CWH
       +materialized: view
-
+      +tags: ["layer:staging"]
+    
+    intermedicate:
+      +tags: ["layer:intermedicate"]
+    
     # marts models -> DB_KITAKI.MRT
     marts:
       +schema: MRT
       +materialized: table
+      +tags: ["layer:marts"]
